@@ -5,15 +5,17 @@
 	text-align:center;
 	font-family: 'Rock Salt', cursive;
 	color:white;
+  margin-top:10px;
 	
 }
 .frontpage{
 	margin-top:20px;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 20px black;
 	text-align: center;
 	//background-image:url("paper.jpg");
 	background-size:100%;
 	outline-color:green;
+  opacity: 0.7;
 }
 .afastar{
 	margin-top:5.5%;
@@ -21,7 +23,7 @@
 .buttons{
 	display:inline-block;
 	border:none;
-	background-color:rgb(102,130,120);
+	background-color:rgb(0,130,120);
 	color:white;
 	width:100px;
 	height:40px;
@@ -34,7 +36,8 @@
 .start{
 	background:rgb(102,130,120);
 	position:inherit;
-	height:120px;
+	height:140px;
+  
 	
 }
 .startbuttons{
@@ -43,6 +46,7 @@
 	color:white;
 	font-family: 'Sue Ellen Francisco', cursive;
 	font-size:150%;
+  transition-duration:200ms;	
 }
 .startbuttons:hover{
 	font-size:190%;
@@ -94,6 +98,7 @@
 	color:white;
 	width:auto;
 	height:auto;
+  transition-duration:200ms;	
 
 }
 .menubuttons:hover{
