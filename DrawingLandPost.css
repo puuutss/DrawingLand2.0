@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+.post{
+	
+	text-align:center;
+	font-family: 'Rock Salt', cursive;
+	color:white;
+	
+}
+.frontpage{
+	margin-top:20px;
+	box-shadow:0 0 10px black;
+	text-align: center;
+	//background-image:url("paper.jpg");
+	background-size:100%;
+	outline-color:green;
+}
+.afastar{
+	margin-top:5.5%;
+}
+.buttons{
+	display:inline-block;
+	border:none;
+	background-color:rgb(102,130,120);
+	color:white;
+	width:100px;
+	height:40px;
+	font-family: 'Anton', sans-serif;}
+.buttons:hover{
+	text-shadow:0 0 10px white;
+	transition-duration:200ms;
+
+}
+.start{
+	background:rgb(102,130,120);
+	position:inherit;
+	height:120px;
+	
+}
+.startbuttons{
+	border:none;
+	background-color:transparent;
+	color:white;
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size:150%;
+}
+.startbuttons:hover{
+	font-size:190%;
+	text-shadow: 0 0 10px white;
+	transition-timing-function:linear;
+	transition-duration:200ms;
+}
+
+.form{
+	text-align: center;
+	//background-image:url("paper.jpg");
+	background-size:100%;
+	outline-color:green;
+	
+	
+}
+.form1{
+	text-align: center;
+	width:60%;
+	border:none;
+	resize:none;
+	background-color:rgba(102,130,120,0.2);
+	outline-color:green;	
+}
+.center{
+	margin-left:5%;
+}
+.title{
+	text-align:center;
+	outline-color:green;
+	border:none;
+	resize:none;
+	margin-top:1%;
+	margin-bottom:1%;
+	width:60%;
+	background-color:rgba(102,130,120,0.2);
+		
+}
+.menu{
+	text-align:center;
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size:180%;
+	color:white;
+	
+}
+.menubuttons{
+	border:none;
+	background-color:transparent;
+	color:white;
+	width:auto;
+	height:auto;
+
+}
+.menubuttons:hover{
+	text-shadow:0 0 20px white;
+	font-size:130%;
+	color:white;
+	transition-timing-function:linear;
+	transition-duration:200ms;	
+}

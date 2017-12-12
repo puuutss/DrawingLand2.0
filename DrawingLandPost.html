@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="DrawingLandPost.css"/>
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<style type="text/css">
+@import url("../../../../../Downloads/bootstrap-3.3.7-dist/css/bootstrap.css");
+</style>
+<title>Nova Postagem</title>
+</head>
+
+<body>
+	<div class = "container-fluid">
+    	<div class = "container start">
+            <div class = "row">
+            	<div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");><?php echo $_COOKIE['Nickname']?></button></div>
+                <div class = "col-md-8 post"><h1>DrawingLand</h1></div>
+                
+                <div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");>Logout</button></div>
+                
+            </div>
+            <div class="row menu">
+            	<div class="col-md-4"><button class = "menubuttons" onClick = window.open("Logout.php");>Home</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick = window.open("Logout.php");>Novos Tutoriais</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick = window.open("Logout.php");>Novas Declarações</button></div>
+            </div>
+   		</div>
+        <div class = "container frontpage">
+        <br />
+        	<div class = "row">
+            	<div class = "col-md-2"></div>
+            	<div class = "col-md-8">
+                <input class = "title" method = "POST"  action = "NewPostDB.php" type = "text" name = "PostTitle" placeholder="Insira aqui o Titulo (25 caracteres)" maxlength="25">
+        		</div>
+                <div class = "col-md-2"></div>
+            </div>
+            <br />
+           	<div class = "row">
+                <div class = "col-md-12 form">
+                	<textarea method = "POST"  action = "NewPostDB.php" type = "text" name = "post" placeholder="Digite aqui o texto a ser inserido  (1724 caracteres)" maxlength = "1724" col = "15" rows = "15" class = "form1"></textarea>
+                </div>
+            </div>
+            <br/>
+            <div class = "row">
+               	<div class = "col-md-3 form"></div>
+               	<div class = "col-md-3 form"><input method = "POST"  action = "NewPostDB.php" type="radio" name="Subject" value="Confissão"><l>Declaração</l></div>
+                <div class = "col-md-3 form"><input method = "POST"  action = "NewPostDB.php" type="radio" name="Subject" value="Tutorial"><l>Tutotial</l></div>
+                <div class = "col-md-3 form"></div>
+            </div>
+            <br />
+            <div class = "row">
+					<div class = "col-md-12 form"><button class = "buttons" name= "sent" onClick = "<? include 'NewPostDB.php'; ?>">Enviar</button></div>
+            </div>
+            <br />
+        </div>
+    </div>
+</body>
+</html>
