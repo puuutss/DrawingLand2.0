@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="DrawingLandPost.css"/>
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<style type="text/css">
+@import url("../../../../../Downloads/bootstrap-3.3.7-dist/css/bootstrap.css");
+</style>
+<title>Login</title>
+</head>
+
+<body class="bg">
+	<div class = "container-fluid">
+    	<div class = "container start">
+            <div class = "row">
+            	<div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");><?php echo $_COOKIE['Nickname']?></button></div>
+                <div class = "col-md-8 post"><h1>DrawingLand</h1></div>
+                
+                <div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");>Logout</button></div>
+                
+            </div>
+            <div class="row menu">
+            	<div class="col-md-4"><button class = "menubuttons" onClick =location.href="DrawingLandHome.html";>Home</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick =location.href="DrawingLandNovosTutoriais.html";>Novos Tutoriais</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick = location.href="DrawingLandNovasDeclarações.html";>Novas Declarações</button></div>
+            </div>
+   		</div>
+        <div class="container frontpage">
+        	<div class="row"><div class="col-md-12 header	"><p>Fazer Login</p></div></div>
+        	<div class="row">
+				<div class="col-md-12">
+                        <textarea type="text" name="Nickname" maxlength="25" placeholder="Digite seu Login:" class = "cadastro" action = "LoginDBConnect.php" method = "POST"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<textarea type="text" name="UserKey" maxlength="25" placeholder="Digite sua senha:" class = "cadastro" action = "LoginDBConnect.php" method = "POST"></textarea>
+            	</div>
+            </div>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="submit" name="sent" class="buttons">Login</button>
+                </div>
+            </div>
+            <div class="row">
+            		<div class="col-md-12 afastarmenos peh">
+					<p>Não possui conta?</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+					<button type="submit" onclick=window.location.href="DrawingLandCadastroUsuario.html"; name="sent" class="buttons">Cadastrar</button>
+                    <p class="peh">Cadastre-se agora! É de gratis XD</p>
+                </div>
+            </div>        
+       </div>        
+    </div>
+</body>
+</html>

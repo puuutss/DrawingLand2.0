@@ -80,14 +80,21 @@
 	outline-color:green;
  	opacity: 1;
 }
+.taller{
+	padding:5%;
+}
 .afastar{
 	margin-top:5.5%;
+}
+.afastarmenos{
+	margin-top:1%;
 }
 .buttons{
 	display:inline-block;
 	border:none;
 	background-color:rgb(0,130,120);
 	color:white;
+	margin-bottom:10px;
 	width:100px;
 	height:40px;
 	font-family: 'Anton', sans-serif;}
@@ -205,4 +212,17 @@
 	outline:0;
 		
 	
+}
+.cadastro{
+	text-align:center;
+	outline-color:green;
+	border:none;
+	resize:none;
+	margin-top:1%;
+	margin-bottom:1%;
+	width:20%;
+	background-color:rgba(102,130,120,0.2);
+	-webkit-box-shadow:inset 1px 1px 10px 0.5px rgba(0,0,0,0.5);
+	box-shadow:inset 1px 1px 6px 0.5px rgba(0,0,0,0.5);
+		
 }
