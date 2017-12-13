@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="DrawingLandPost.css"/>
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<style type="text/css">
+@import url("../../../../../Downloads/bootstrap-3.3.7-dist/css/bootstrap.css");
+</style>
+<title>Novas Declarações</title>
+</head>
+
+<body class="bg">
+	<div class = "container-fluid">
+    	<div class = "container start">
+            <div class = "row">
+            	<div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");><?php echo $_COOKIE['Nickname']?></button></div>
+                <div class = "col-md-8 post"><h1>DrawingLand</h1></div>
+                
+                <div class = "col-md-2">
+                
+                <button class = "startbuttons afastar" onClick = window.open("Logout.php");>Logout</button></div>
+                
+            </div>
+            <div class="row menu">
+            	<div class="col-md-4"><button class = "menubuttons" onClick =location.href="DrawingLandHome.html";>Home</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick =location.href="DrawingLandNovosTutoriais.html";>Novos Tutoriais</button></div>
+                <div class="col-md-4"><button class = "menubuttons" onClick = location.href="DrawingLandNovasDeclarações.html";>Novas Declarações</button></div>
+            </div>
+   		</div>
+        <div class = "container frontpage">
+        <br />
+        	<div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 1 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 2 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 3 AND PostSubject =  ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 4 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 5 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?> </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 6 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?> </p></div>
+            </div>
+            <div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 1 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 2 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 3 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 4 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 5 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 6 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+            </div>
+            <div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 1 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 2 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 3 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 4 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 5 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 6 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+            </div>
+            <br/>
+            <div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 7 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 8 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 9 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 10 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 11 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostTitle FROM Post WHERE PostID = 12 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+            </div>
+            <div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 7 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 8 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 9 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 10 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 11  AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostBody FROM Post WHERE PostID = 12 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+            </div>
+            <div class = "row">
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 7  AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,60);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 8  AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?> </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 9  AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 10 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 11 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+
+<div class = "col-md-2"><p class="peh"><?php include 'Connection.php'; $dbret = mysql_query("SELECT PostCreator FROM Post WHERE PostID = 12 AND PostSubject = 2 ORDER BY PostID DESC LIMIT 1");$text = substr($dbret,0,5);$textshow = $text + "...";echo $textshow; ?>  </p></div>
+            </div>
+            <div class="row"><div class="col-md-12 header1"><button class="buttons1" onClick = location.href="DrawingLandPost.html";>Clique aqui para criar o seu próprio Post</button></div></div>
+            </div>
+        </div>
+</body>
+</html>

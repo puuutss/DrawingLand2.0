@@ -9,7 +9,9 @@
 <style type="text/css">
 @import url("../../../../../Downloads/bootstrap-3.3.7-dist/css/bootstrap.css");
 </style>
-<title>Nova Postagem</title>
+<title>Home Sweet Home</title>
+</head>
+
 <body class="bg">
 	<div class = "container-fluid">
     	<div class = "container start">
@@ -31,36 +33,14 @@
             </div>
    		</div>
         <div class = "container frontpage">
-        <br />
-      		<div class="row">
-            	<div class="col-md-12 header"><p1>Crie seu próprio post aqui:</p1></div>
-            </div>
-        	<div class = "row">
-            	<div class = "col-md-2"></div>
-            	<div class = "col-md-8">
-                <input class = "title" method = "POST"  action = "NewPostDB.php" type = "text" name = "PostTitle" placeholder="Insira aqui o Titulo (25 caracteres)" maxlength="25">
-        		</div>
-                <div class = "col-md-2"></div>
-            </div>
-            <br />
-           	<div class = "row">
-                <div class = "col-md-12 form">
-                	<textarea method = "POST"  action = "NewPostDB.php" type = "text" name = "post" placeholder="Digite aqui o texto a ser inserido  (1724 caracteres)" maxlength = "1724" col = "15" rows = "15" class = "form1"></textarea>
-                </div>
-            </div>
-            <br/>
-            <div class = "row">
-               	<div class = "col-md-3 form"></div>
-               	<div class = "col-md-3 form"><input method = "POST"  action = "NewPostDB.php" type="radio" name="Subject" value="2"><l>Declaração</l></div>
-                <div class = "col-md-3 form"><input method = "POST"  action = "NewPostDB.php" type="radio" name="Subject" value="1"><l>Tutotial</l></div>
-                <div class = "col-md-3 form"></div>
-            </div>
-            <br />
-            <div class = "row">
-					<div class = "col-md-12 form"><button class = "buttons" name= "sent" onClick = "<? include 'NewPostDB.php'; ?>">Enviar</button></div>
-            </div>
-            <br />
-        </div>
+  	     <br/>
+    		<div class="row"><div class="col-md-12 header"><p>Bem-Vindo à DrawingLand!</p></div></div>
+            <div class="row"><div class="col-md-12 header1"><p>DrawingLand é um site para auxiliar aqueles que tem dificuldade de desenhar, seja uma dificuldade completa ou em apenas um ponto especifico(ex:mãos,pés,anatomia do rosto).</p></div></div>
+            <div class="row"><div class="col-md-12 header1"><p>A ideologia é o que move os sites para frente, a nossa ideologia é fazer pessoas auxiliarem umas às outras com soluções que eles descobriram. Muitas vezes o problema que enfrentamos só é superado ao superarmos a dificuldade com algo que nos sintamos confortáveis aplicando ao problema...</p></div></div>
+            <div class="row"><div class="col-md-12 header1"><button class="buttons1" onClick = location.href="DrawingLandPost.html";>Clique aqui para criar o seu próprio Post</button></div></div>
+            
+    		
+      	</div>
     </div>
-</body>
+  </body>
 </html>
